@@ -24,8 +24,7 @@
                         <tr>
                             <td>{{$plate->name}}</td>
                             <td>€{{$plate->price}}</td>
-                            {{-- <td>{{$plate->restaurant->name}}</td> --}}
-                            <td>{{$plate->restaurant->id ?? 'No restaurant'}}</td>
+                            <td>{{$plate->restaurant->name ?? 'No restaurant'}}</td>
                             <td>
                                 <a href="{{Route('plate.show',$plate->id)}}" value="Show Ingredients" class="btn btn-dark">Show</a>
                             </td>

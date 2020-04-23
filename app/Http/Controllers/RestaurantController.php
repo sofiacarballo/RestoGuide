@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Restaurant;
 use Illuminate\Http\Request;
-use App\Auth;
 
 class RestaurantController extends Controller
 {
@@ -24,9 +23,10 @@ class RestaurantController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->all();
-        $data['user_id'] = auth::user()->id;
-        Restaurant::create($data);
+        /* $data = $request->all();
+        $data['user_id'] = Auth::user()->id;
+        Restaurant::create($data); */
+        Restaurant::create($request->all());
         return redirect(route('restaurant.index'));
     }
 

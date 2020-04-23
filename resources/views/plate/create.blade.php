@@ -14,6 +14,7 @@
                             <input type="text" name='name' class="form-control"/>
                             <label for="address">Price</label>
                             <input type="text" name="price" class="form-control"/>
+                            <input type="hidden" name="restaurant_id" value="{{Auth::user()->restaurant->id}}"/>
                         </div>
                 </div>
                 {{-- <div class="class-body">

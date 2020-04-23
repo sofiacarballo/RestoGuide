@@ -16,7 +16,7 @@
                             <input type="text" name="address" class="form-control"/>
                             <label for="phone">Phone number</label>
                             <input type="text" name="phone" class="form-control"/>
-                        {{-- <input type="hidden" name="user_id" value="{{auth::user()->id}}"/> --}}
+                            <input type="hidden" name="user_id" value="{{auth::user()->id}}"/> 
                         </div>
                 </div>
                 <div class="card-footer">

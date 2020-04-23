@@ -17,7 +17,7 @@ class CreatePlatesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('price');
-            $table->foreignId('restaurant_id');
+            $table->foreignId('restaurant_id')->nullable();
             $table->foreign('restaurant_id')->references('id')->on('restaurants');
             $table->timestamps();
         });
